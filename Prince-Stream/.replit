@@ -1,0 +1,13 @@
+run = "cd Prince-Stream && g++ -g -Wall *.cpp -o Prince-Stream && ./Prince-Stream"
+
+[workflows]
+runButton = "Run"
+
+[[workflows.workflow]]
+name = "Run"
+author = 41671303
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd Prince-Stream/Prince-Stream && g++ -g -Wall Prince-Stream.cpp main.cpp -o Prince-Stream && ./Prince-Stream \"../Datasets/test.txt\" 2 1000 \"../outCI.txt\" 1000 \"../outOr.txt\" 0.5 \"../outLattice.txt\" \"../outExactRules.txt\" \"../outInformativeRules.txt\""

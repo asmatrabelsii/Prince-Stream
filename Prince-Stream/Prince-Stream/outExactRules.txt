@@ -1,0 +1,8 @@
+=== Exact Rules (ER) ===
+Rule: {2} => {5} (support: 4, confidence: 1.0)
+Rule: {5} => {2} (support: 4, confidence: 1.0)
+Rule: {1} => {3} (support: 3, confidence: 1.0)
+Rule: {2,3} => {5} (support: 3, confidence: 1.0)
+Rule: {3,5} => {2} (support: 3, confidence: 1.0)
+Rule: {1,2} => {3,5} (support: 2, confidence: 1.0)
+Rule: {1,5} => {2,3} (support: 2, confidence: 1.0)

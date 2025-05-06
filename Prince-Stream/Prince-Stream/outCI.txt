@@ -1,0 +1,6 @@
+s=5 fermeture : generateurs : 
+s=4 fermeture : 3 generateurs : 3 
+s=3 fermeture : 1 3 generateurs : 1 
+s=4 fermeture : 2 5 generateurs : 2   5 
+s=3 fermeture : 2 3 5 generateurs : 3 5   2 3 
+s=2 fermeture : 1 2 3 5 generateurs : 1 2   1 5 
