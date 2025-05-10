@@ -20,15 +20,42 @@ GenLatticeNode* buildGenLattice(std::multimap<uint32_t, ClosedIS*>* ClosureList,
 		}
 		GenLatticeNode* root = new GenLatticeNode(-1, std::set<uint32_t>(), emptyClos->support, emptyClos, nullptr);
 
-		// Step 2: Collect all generators
+		// Step 2: Collect frequent minimal generators (FMGs)
 		std::vector<std::pair<std::set<uint32_t>, ClosedIS*>> generators;
 		for (auto& entry : *ClosureList) {
 				ClosedIS* clos = entry.second;
-				if (clos->deleted) continue;
+				if (clos->deleted || clos->gens.empty()) continue;
 				for (auto gen : clos->gens) {
 						std::set<uint32_t> genItems = gen->items();
 						if (genItems.empty()) continue;
-						generators.emplace_back(genItems, clos);
+
+						// Check if gen is minimal (no proper subset has the same closure)
+						bool isMinimal = true;
+						if (genItems.size() > 1) { // Size-1 generators are always minimal
+								for (auto item : genItems) {
+										std::set<uint32_t> subset = genItems;
+										subset.erase(item);
+										// Check if subset is in ClosureList with same closure
+										bool subsetHasSameClosure = false;
+										for (auto& cl : *ClosureList) {
+												if (cl.second->deleted) continue;
+												std::set<uint32_t> clItems = cl.second->itemset;
+												if (std::includes(clItems.begin(), clItems.end(), subset.begin(), subset.end()) &&
+														cl.second->support == static_cast<uint32_t>(TList->supp_from_tidlist(subset)) &&
+														clItems == clos->itemset) {
+														subsetHasSameClosure = true;
+														break;
+												}
+										}
+										if (subsetHasSameClosure) {
+												isMinimal = false;
+												break;
+										}
+								}
+						}
+						if (isMinimal) {
+								generators.emplace_back(genItems, clos);
+						}
 				}
 		}
 
