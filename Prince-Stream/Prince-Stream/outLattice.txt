@@ -1,9 +1,37 @@
-Generator: { } [Equiv: { }] Support: 5 Closure: { } Preds: { } Succs: { }
-  Generator: { 2 } [Equiv: { 2 }, { 5 }] Support: 4 Closure: { 2 5 } Preds: { } Succs: { { 2 3 }, { 3 5 }, { 1 2 }, { 1 5 }, }
-    Generator: { 5 } [Equiv: { 5 }, { 2 }] Support: 4 Closure: { 2 5 } Preds: { } Succs: { { 2 3 }, { 3 5 }, { 1 2 }, { 1 5 }, }
-  Generator: { 3 } [Equiv: { 3 }] Support: 4 Closure: { 3 } Preds: { } Succs: { { 1 }, { 2 3 }, { 3 5 }, { 1 2 }, { 1 5 }, }
-  Generator: { 1 } [Equiv: { 1 }] Support: 3 Closure: { 1 3 } Preds: { { 3 }, } Succs: { { 1 2 }, { 1 5 }, }
-  Generator: { 2 3 } [Equiv: { 2 3 }, { 3 5 }] Support: 3 Closure: { 2 3 5 } Preds: { { 2 }, { 3 }, { 5 }, } Succs: { { 1 2 }, { 1 5 }, }
-    Generator: { 3 5 } [Equiv: { 3 5 }, { 2 3 }] Support: 3 Closure: { 2 3 5 } Preds: { { 2 }, { 3 }, { 5 }, } Succs: { { 1 2 }, { 1 5 }, }
-  Generator: { 1 2 } [Equiv: { 1 2 }, { 1 5 }] Support: 2 Closure: { 1 2 3 5 } Preds: { { 2 }, { 3 }, { 5 }, { 1 }, { 2 3 }, { 3 5 }, } Succs: { }
-    Generator: { 1 5 } [Equiv: { 1 5 }, { 1 2 }] Support: 2 Closure: { 1 2 3 5 } Preds: { { 2 }, { 3 }, { 5 }, { 1 }, { 2 3 }, { 3 5 }, } Succs: { }
+Generator: { } [Equiv: { }] Support: 1000 Closure: { } Preds: { } Succs: { }
+  Generator: { 1 } [Equiv: { 1 }] Support: 930 Closure: { 1 } Preds: { } Succs: { { 13743 }, { 1 21308 }, { 1 16967 }, { 1 39388 }, { 1 39684 }, { 1 4 }, { 2 3 }, { 1 2 100 }, { 1 39333 }, { 1 2 39684 }, { 13716 }, { 1 2 4 }, { 1 39337 }, { 16977 }, { 16975 }, { 1 100 }, { 2 13743 }, { 1 2 16967 }, { 1 2 }, { 1 3 }, { 2 13716 }, }
+  Generator: { 2 } [Equiv: { 2 }] Support: 459 Closure: { 2 } Preds: { } Succs: { { 2 4 }, { 2 39684 }, { 2 3 }, { 1 2 100 }, { 1 2 39684 }, { 1 2 4 }, { 2 16967 }, { 2 13743 }, { 1 2 16967 }, { 1 2 }, { 2 100 }, { 2 13716 }, }
+  Generator: { 3 } [Equiv: { 3 }] Support: 111 Closure: { 3 } Preds: { } Succs: { { 2 3 }, { 1 3 }, }
+  Generator: { 100 } [Equiv: { 100 }] Support: 99 Closure: { 100 } Preds: { } Succs: { { 1 2 100 }, { 1 100 }, { 2 100 }, }
+  Generator: { 4 } [Equiv: { 4 }] Support: 94 Closure: { 4 } Preds: { } Succs: { { 2 4 }, { 1 4 }, { 1 2 4 }, }
+  Generator: { 39684 } [Equiv: { 39684 }] Support: 63 Closure: { 39684 } Preds: { } Succs: { { 2 39684 }, { 1 39684 }, { 1 2 39684 }, }
+  Generator: { 13716 } [Equiv: { 13716 }] Support: 44 Closure: { 1 13716 } Preds: { { 1 }, } Succs: { { 2 13716 }, }
+  Generator: { 16967 } [Equiv: { 16967 }] Support: 43 Closure: { 16967 } Preds: { } Succs: { { 1 16967 }, { 2 16967 }, { 1 2 16967 }, }
+  Generator: { 13743 } [Equiv: { 13743 }] Support: 42 Closure: { 1 13743 } Preds: { { 1 }, } Succs: { { 2 13743 }, }
+  Generator: { 39337 } [Equiv: { 39337 }] Support: 42 Closure: { 39337 } Preds: { } Succs: { { 1 39337 }, }
+  Generator: { 39333 } [Equiv: { 39333 }] Support: 40 Closure: { 39333 } Preds: { } Succs: { { 1 39333 }, }
+  Generator: { 21308 } [Equiv: { 21308 }] Support: 38 Closure: { 21308 } Preds: { } Succs: { { 1 21308 }, }
+  Generator: { 39388 } [Equiv: { 39388 }] Support: 37 Closure: { 39388 } Preds: { } Succs: { { 1 39388 }, }
+  Generator: { 16975 } [Equiv: { 16975 }] Support: 34 Closure: { 1 16975 } Preds: { { 1 }, } Succs: { }
+  Generator: { 16977 } [Equiv: { 16977 }] Support: 34 Closure: { 1 16977 } Preds: { { 1 }, } Succs: { }
+  Generator: { 1 2 } [Equiv: { 1 2 }] Support: 432 Closure: { 1 2 } Preds: { { 2 }, { 1 }, } Succs: { { 2 3 }, { 1 2 100 }, { 1 2 39684 }, { 1 2 4 }, { 2 13743 }, { 1 2 16967 }, { 2 13716 }, }
+  Generator: { 1 3 } [Equiv: { 1 3 }] Support: 109 Closure: { 1 3 } Preds: { { 3 }, { 1 }, } Succs: { { 2 3 }, }
+  Generator: { 1 100 } [Equiv: { 1 100 }] Support: 89 Closure: { 1 100 } Preds: { { 100 }, { 1 }, } Succs: { { 1 2 100 }, }
+  Generator: { 1 4 } [Equiv: { 1 4 }] Support: 87 Closure: { 1 4 } Preds: { { 1 }, { 4 }, } Succs: { { 1 2 4 }, }
+  Generator: { 2 3 } [Equiv: { 2 3 }] Support: 79 Closure: { 1 2 3 } Preds: { { 2 }, { 3 }, { 1 }, { 1 2 }, { 1 3 }, } Succs: { }
+  Generator: { 2 4 } [Equiv: { 2 4 }] Support: 70 Closure: { 2 4 } Preds: { { 2 }, { 4 }, } Succs: { { 1 2 4 }, }
+  Generator: { 1 39684 } [Equiv: { 1 39684 }] Support: 62 Closure: { 1 39684 } Preds: { { 39684 }, { 1 }, } Succs: { { 1 2 39684 }, }
+  Generator: { 2 39684 } [Equiv: { 2 39684 }] Support: 47 Closure: { 2 39684 } Preds: { { 39684 }, { 2 }, } Succs: { { 1 2 39684 }, }
+  Generator: { 2 100 } [Equiv: { 2 100 }] Support: 44 Closure: { 2 100 } Preds: { { 2 }, { 100 }, } Succs: { { 1 2 100 }, }
+  Generator: { 1 16967 } [Equiv: { 1 16967 }] Support: 42 Closure: { 1 16967 } Preds: { { 1 }, { 16967 }, } Succs: { { 1 2 16967 }, }
+  Generator: { 2 13716 } [Equiv: { 2 13716 }] Support: 37 Closure: { 1 2 13716 } Preds: { { 2 }, { 13716 }, { 1 }, { 1 2 }, } Succs: { }
+  Generator: { 1 21308 } [Equiv: { 1 21308 }] Support: 36 Closure: { 1 21308 } Preds: { { 1 }, { 21308 }, } Succs: { }
+  Generator: { 1 39388 } [Equiv: { 1 39388 }] Support: 36 Closure: { 1 39388 } Preds: { { 1 }, { 39388 }, } Succs: { }
+  Generator: { 2 16967 } [Equiv: { 2 16967 }] Support: 36 Closure: { 2 16967 } Preds: { { 2 }, { 16967 }, } Succs: { { 1 2 16967 }, }
+  Generator: { 1 39333 } [Equiv: { 1 39333 }] Support: 32 Closure: { 1 39333 } Preds: { { 39333 }, { 1 }, } Succs: { }
+  Generator: { 1 39337 } [Equiv: { 1 39337 }] Support: 31 Closure: { 1 39337 } Preds: { { 39337 }, { 1 }, } Succs: { }
+  Generator: { 2 13743 } [Equiv: { 2 13743 }] Support: 31 Closure: { 1 2 13743 } Preds: { { 13743 }, { 2 }, { 1 }, { 1 2 }, } Succs: { }
+  Generator: { 1 2 4 } [Equiv: { 1 2 4 }] Support: 68 Closure: { 1 2 4 } Preds: { { 2 4 }, { 2 }, { 1 4 }, { 1 }, { 1 2 }, { 4 }, } Succs: { }
+  Generator: { 1 2 39684 } [Equiv: { 1 2 39684 }] Support: 46 Closure: { 1 2 39684 } Preds: { { 39684 }, { 2 39684 }, { 2 }, { 1 39684 }, { 1 }, { 1 2 }, } Succs: { }
+  Generator: { 1 2 100 } [Equiv: { 1 2 100 }] Support: 43 Closure: { 1 2 100 } Preds: { { 2 }, { 100 }, { 1 100 }, { 1 }, { 1 2 }, { 2 100 }, } Succs: { }
+  Generator: { 1 2 16967 } [Equiv: { 1 2 16967 }] Support: 35 Closure: { 1 2 16967 } Preds: { { 1 16967 }, { 2 }, { 2 16967 }, { 1 }, { 1 2 }, { 16967 }, } Succs: { }
