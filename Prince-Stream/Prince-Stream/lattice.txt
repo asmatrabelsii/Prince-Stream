@@ -1,0 +1,6 @@
+Minimal Generator Lattice:
+Node: {}, Support: 5
+  Node: {2}, Support: 3, Closure: {2,5}
+  Node: {5}, Support: 3, Closure: {2,5}
+  Node: {1}, Support: 2, Closure: {1,2,3,5}
+  Node: {3}, Support: 2, Closure: {1,2,3,5}
